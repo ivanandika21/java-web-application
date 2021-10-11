@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Response</title>
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+            .child-con {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+                padding: 2rem 5rem;
+                width: 30vw;
+            }
+            .child-con h2 {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 30vw;
+            }
+            .styled td {
+                height: 40px;
+                border: 1px solid grey;
+                padding-left: 10px;
+            }
+            .styled th {
+                height: 40px;
+                border: 1px solid grey;
+                text-align: left;
+                padding-left: 10px;
+            }
+            .btn {
+                background-color: #1abc9c;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0 3px 10px rgba(26, 188, 156, 0.4);
+                color: #fff;
+                font-weight: bolder;
+                padding: 10px 20px;
+            }
+            .btn:hover {
+                background-color: #0e9176;
+                cursor: pointer;
+            }
+            .theadd {
+                padding-right: 10px;
+            }
+            .select {
+                border: 1px solid #1abc9c;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <div class="child-con">
+                <h2>Halaman Stok Barang</h2>
+                <table class="styled">
+                    <tr>
+                        <th>
+                            Manufactures
+                        </th>
+                        <td>
+                            #{main.manufactures}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Nama Barang
+                        </th>
+                        <td>
+                            #{main.brand}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Status
+                        </th>
+                        <td>
+                            #{main.datavga}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Stok Vga
+                        </th>
+                        <td>
+                            #{main.stokVga}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Keterangan
+                        </th>
+                        <td>
+                            #{main.keterangan}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        
+        
+    </h:body>
+</html>

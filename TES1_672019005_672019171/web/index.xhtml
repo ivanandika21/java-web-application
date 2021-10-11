@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>TES1_672019005_672019171</title>
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+            .child-con {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 2rem 5rem;
+                width: 20vw;
+            }
+            .child-con h2 {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+            .head-con {
+                text-align: center;
+                margin-top: 3rem;
+            }
+            table {
+                border-collapse: collapse;
+                width: 20vw;
+            }
+            .styled td {
+                height: 40px;
+            }
+            .btn {
+                background-color: #1abc9c;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0 3px 10px rgba(26, 188, 156, 0.4);
+                color: #fff;
+                font-weight: bolder;
+                margin-top: 10px;
+                padding: 10px 20px;
+            }
+            .btn:hover {
+                background-color: #0e9176;
+                cursor: pointer;
+            }
+            .theadd {
+                padding-right: 10px;
+            }
+            .select {
+                border: 1px solid #1abc9c;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="head-con">
+            <h2>Tugas Pemrograman Lanjut<br/>JSF Stok Toko VGA dengan DP Factory</h2>
+            <h4>Wibisono Adiyoso (672019005) | Ivan Andika Surya (672019171)</h4>
+        </div>
+        
+        <div class="container">
+            <div class="child-con">
+                <h:form>
+                    <table class="styled">
+                        <h2>Cari stok barang</h2>
+                        <tr>
+                            <td class="theadd">Manufactures</td>
+                            <td>
+                                <h:selectOneRadio value="#{main.manufactures}">
+                                    <f:selectItem itemValue="NVIDIA" itemLabel="NVIDIA" />
+                                    <f:selectItem itemValue="AMD" itemLabel="AMD" />
+                                </h:selectOneRadio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="theadd">Brand</td>
+                            <td>
+                                <h:selectOneMenu class="select" value="#{main.brand}" >
+                                    <f:selectItem itemLabel="Pilih brand" />
+                                    <f:selectItem itemValue="Asus" itemLabel="Asus" />
+                                    <f:selectItem itemValue="Aorus" itemLabel="Aorus" />
+                                    <f:selectItem itemValue="Evga" itemLabel="Evga" />
+                                    <f:selectItem itemValue="Gigabyte" itemLabel="Gigabyte" />
+                                    <f:selectItem itemValue="Zotac" itemLabel="Zotac" />
+                                </h:selectOneMenu>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h:commandButton class="btn" value="Cek Stok" action="response" />
+                            </td>
+                        </tr>
+                    </table>
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</html>
